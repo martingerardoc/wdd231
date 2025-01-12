@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Cespedes - WDD 231 - Web Frontend 1</title>
+    <meta
+      name="description"
+      content="WDD 231 - Web Frontend 1. Course assignment portal for Martin Cespedes. Course offered by Brigham Young University - BYU, through Pathway Worldwide. Assignment portal links to all learning activities and project."
+    />
+    <meta name="author" content="Martin Cespedes">
+    <meta
+      property="og:title"
+      content="Martin Cespedes - WDD231 - Web Frontend 1"
+    />
+    <meta property="og:type" content="website">
+    <meta
+      property="og:image"
+      content="https://pbs.twimg.com/media/DTsoG8_XUAEzZhB?format=webp&name=small">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script src="scripts/script.js" defer></script>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <div class="img-box">
+          <img
+            src="images/Martin-Profile.webp"
+            alt="Photo of Martin Cespedes. The author"
+            title="Martin Cespedes"
+            width="400"
+            height="250"
+            loading="lazy"
+          />
+        </div>
+        <h1>Martin Cespedes</h1>
+      </header>
+
+      <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+          <li>
+            <a href="#" target="_blank">Home</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Koigor97/wdd231/chamber"
+              target="_blank"
+            >
+              Chamber
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Koigor97" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a
+              href="www.linkedin.com/in/martin-cespedes"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="course-work-box">
+        <div class="course-work-list">
+          <h3>Course Work</h3>
+          <div>
+            <ul>
+              <li>•</li>
+              <li>•</li>
+              <li>•</li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="country-info-box">
+          <h3>Argentina</h3>
+          <div class="country-info">
+            <div class="country-img-box">
+              <img
+                src="images/flag-of-argentina.webp"
+                alt="Argentina Flag"
+                title="Argentina Flag"
+                width="10"
+                height="10"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <p>Argentina Flag</p>
+        </section>
+      </section>
+      <section class="certificate">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="buttons">
+          <button onclick="filterCourses('all')">All</button>
+          <button onclick="filterCourses('CSE')">CSE</button>
+          <button onclick="filterCourses('WDD')">WDD</button>
+        </div>
+        <div id="courses"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;
+        <span id="year"></span>
+        .:|:. Martin Cespedes .:|:. Buenos Aires Argentina
+      </p>
+      <p>
+        Last Modification:
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
