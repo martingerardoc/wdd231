@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Cespedes - Chamber of commerce</title>
+    <meta
+      name="description"
+      content="WDD 231 - Web Frontend 1. Course assignment portal for Martin Cespedes. Course offered by Brigham Young University - BYU, through Pathway Worldwide. Assignment portal links to all learning activities and project."
+    />
+    <meta name="author" content="Martin Cespedes">
+    <meta property="og:title" content="Martin Cespedes - WDD231 - Web Frontend 1"/>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pbs.twimg.com/media/DTsoG8_XUAEzZhB?format=webp&name=small">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/larger.css" />
+    <script src="../scripts/script.js" defer></script>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQ0NDAP///wAJCQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIgAAAAAAAAAiIAAAAAAAAiIiACIAIgAiIiIAIgAiACIiIgAiACIAIiIiACIAIgAiIiIAIgAiACIiIgAiACIQIiIiIiIiIiIiIgAAAAAAAAAiAAAAIgAAAyIiAAAgAAAiIiIiAAAAIiIiIiIiACIiIiIiIiIiIiIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+  </head>
+
+  <body class="directory-page-body">
+    <header>
+      <button class="menu-btn" aria-label="Toggle menu button">
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="logo-box">
+        <a href="index.html">
+          <img
+            src="images/chamber-logo.png"
+            alt="Lynnwood Business Chamber logo"
+            class="logo"
+            width="323"
+            height="130"
+          />
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-links">
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-home"></use>
+              </svg>
+              HOME
+            </a>
+          </li>
+          <li><a href="discover.html" class="nav-links"><svg>
+                <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+              </svg> DISCOVER</a></li>
+          <li>
+            <a href="directory.html" class="nav-links">
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-folder"></use>
+              </svg>
+              DIRECTORY
+            </a>
+          </li>
+          <li>
+            <a href="join.html" class="nav-links">
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-add-user"></use>
+              </svg> JOIN
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro-section">
+        <h1>Discover Our Diverse Member Directory</h1>
+        <p>
+          Welcome to our vibrant Member Directory, a showcase of the businesses
+          that power our community. Our directory is home to a diverse array of
+          companies, each contributing to the local economy and fostering
+          growth. Whether you're seeking a trusted service provider, networking
+          opportunities, or simply want to explore the incredible range of
+          businesses in our region, you've come to the right place.
+        </p>
+      </section>
+
+      <section class="views-button-section">
+        <button role="button" id="grid-view">Grid view</button>
+        <button role="button" id="list-view">List view</button>
+      </section>
+
+      <section class="member-card-section"></section>
+    </main>
+
+    <footer>
+      <div class="contact-box">
+        <p class="footer-captions">Contact Us</p>
+        <address>
+          <a href="mailto:tur22018@byui.edu">📧 lynnwoodchamber@outlook.com</a>
+          <!-- <br> -->
+          <a href="tel:+27824004469">📞 (082) 400-4469</a>
+          <p>📍 285 Lynnwood Boulevard</p>
+          <p>0081 - San Nicolas</p>
+          <p>Buenos Aires, Argentina</p>
+        </address>
+      </div>
+      <div class="quick-link-box">
+        <p class="footer-captions">Quick Links</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-socials">
+        <p class="footer-captions">Stay Connected</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/koigor101/"
+              target="_blank"
+              class="footer-social-links"
+              aria-label="Go to Koigor's Instagram page"
+            >
+              <svg>
+                <use
+                  xlink:href="images/sprite.svg#icon-instagram-with-circle"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/samuel-turay1/"
+              target="_blank"
+              class="footer-social-links"
+              aria-label="Go to Koigor's LinkedIn account"
+            >
+              <svg>
+                <use
+                  xlink:href="images/sprite.svg#icon-linkedin-with-circle"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100004979054375"
+              target="_blank"
+              class="footer-social-links"
+              aria-label="Go to Koigor's Facebook page"
+            >
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="footer-social-links"
+              aria-label="Go to Youtube.com homepage"
+            >
+              <svg>
+                <use
+                  xlink:href="images/sprite.svg#icon-youtube-with-circle"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright-box">
+        <p>
+            <span id="year"></span>
+            .:|:. Martin Cespedes .:|:. Buenos Aires Argentina
+          </p>
+          <p>
+            Last Modification:
+            <span id="lastModified"></span>
+          </p>
+    </footer>
+  </body>
+</html>
