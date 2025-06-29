@@ -13,24 +13,26 @@ function getCelsius(fahrenheit) {
 
 // Set up the Date format object parameter for toLocaleDateString method.
 const options = {
-		weekday: "long",
-		day: "numeric",
-		month: "long",
+		month: "short",
+        day: "numeric",
 		year: "numeric"
 	};
 
 // Question #1
-today1.innerHTML = new Date().toLocaleDateString("en-UK", options);
+today1.innerHTML = new Date().toLocaleDateString("en-US", options);
 
 // Question #2
-today2.innerHTML = "<strong>Volume</strong>: " + volume + " liters";
+today2.innerHTML = `<strong>Volume</strong>: ${volume} liters`;
 
 // Question #3
-
+let quantity = document.querySelector('#q').value;
 // Question #4
-
+document.querySelector('aside').innerHTML = 'Welcome to <mark>our</mark> neighborhood!';
 // Question #5
-
+document.querySelector('#temp').value = `${getCelsius(33).toFixed(1)} °C`;
 // Question #6
-
+const divs = document.querySelectorAll('div');
+document.querySelector('#divs').textContent = `${divs.length} divs in document.`;
 // Question #7
+let filterC = citynames.filter(city => city.charAt(0) === 'C');
+document.querySelector('#c-names').textContent = filterC;
