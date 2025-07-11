@@ -4,7 +4,7 @@
     "address": "123 Innovation Drive, Silicon Valley, CA",
     "phone": "(555) 123-4567",
     "website": "https://www.technova.com",
-    "image": "technova.png",
+    "image": "./images/technovasolutions.jpeg",
     "membership": 3,
     "description": "Leading IT consulting and software development company."
   },
@@ -83,3 +83,43 @@ function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 }
+async function loadMembers() {
+  try {
+    const response = await fetch("data/members.json");
+    if (!response.ok) throw new Error("Failed to fetch members data");
+
+    const members = await response.json();
+    const container = document.getElementById("members");
+
+    members.forEach(member => {
+      const card = document.createElement("div");
+      card.classList.add("member-card");
+
+      card.innerHTML = `
+        <img src="images/${member.image}" alt="${member.name}" class="member-img">
+        <h3>${member.name}</h3>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p><strong>Membership Level:</strong> ${getMembershipName(member.membership)}</p>
+        <p>${member.description}</p>
+      `;
+
+      container.appendChild(card);
+    });
+
+  } catch (error) {
+    console.error("Error loading members:", error);
+  }
+}
+
+function getMembershipName(level) {
+  switch (level) {
+    case 1: return "Member";
+    case 2: return "Silver";
+    case 3: return "Gold";
+    default: return "Unknown";
+  }
+}
+
+loadMembers();
