@@ -1,7 +1,10 @@
 @media only screen and (min-width: 56.25em) {
     html {
-      font-size: 62.5%;
+      font-size: 1rem;
     }
+    span p{
+    font-size: 0.5rem;
+  }
   
     header {
       font-size: var(--fluid-text-3);
@@ -9,7 +12,7 @@
   
     nav,
     main {
-      max-width: 180rem;
+      max-width: 200rem;
       margin: 0 auto;
     }
   
