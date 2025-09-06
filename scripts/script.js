@@ -48,3 +48,12 @@ menuButton.addEventListener("click", () => {
   navigationList.classList.toggle("open");
   menuButton.classList.toggle("open"); // Toggles icon between ☰ and ❎
 });
+// Add event listeners to filter buttons
+const filterButtons = document.querySelectorAll(".buttons button");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const type = button.getAttribute("data-type");
+    filterCourses(type);
+  });
+});

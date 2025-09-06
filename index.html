@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Martin Cespedes - WDD 231 - Web Frontend 1</title>
-    <meta
-      name="description"
-      content="WDD 231 - Web Frontend 1. Course assignment portal for Martin Cespedes."
-    />
-    <meta name="author" content="Martin Cespedes" />
-    <meta property="og:title" content="Martin Cespedes - WDD231 - Web Frontend 1" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://pbs.twimg.com/media/DTsoG8_XUAEzZhB?format=webp&name=small"
-    />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Martin Cespedes - WDD 231 - Web Frontend 1</title>
+  <meta name="description" content="WDD 231 - Web Frontend 1. Course assignment portal for Martin Cespedes." />
+  <meta name="author" content="Martin Cespedes" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-  </head>
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Martin Cespedes - WDD 231 - Web Frontend 1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://pbs.twimg.com/media/DTsoG8_XUAEzZhB?format=webp&name=small" />
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts: single link for all fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+</head>
   <body>
     <!-- HEADER -->
     <header>
-      <img src="images/McespedesIcon.ico" alt="Site Icon" />
-      <h1>Martin Cespedes</h1>
+      <img src="images/mcespedesicon.ico" alt="Site Icon" />
+      <h2>Martin Cespedes</h2>
     </header>
 
     <!-- NAVIGATION -->
@@ -70,9 +68,9 @@
       <section class="certificate">
         <h2>Web Certificate Courses</h2>
         <div class="buttons">
-          <button onclick="filterCourses('all')">All</button>
-          <button onclick="filterCourses('CSE')">CSE</button>
-          <button onclick="filterCourses('WDD')">WDD</button>
+            <button data-type="all">All</button>
+            <button data-type="CSE">CSE</button>
+            <button data-type="WDD">WDD</button>
         </div>
         <div id="courses"></div>
       </section>
@@ -80,7 +78,7 @@
       <!-- SOCIAL LINKS -->
       <section class="social-links">
         <a href="https://www.linkedin.com/in/martin-cespedes" target="_blank">
-          <img src="images/InBug-White.png" alt="LinkedIn" width="40" />
+          <img src="images/linkedin.png" alt="LinkedIn" width="40" />
         </a>
         <a href="https://github.com/martingerardoc" target="_blank">
           <img src="images/github-mark-white.png" alt="GitHub" width="40" />
