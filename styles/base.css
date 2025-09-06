@@ -1,0 +1,271 @@
+:root {
+  /* Custom properties (variables) */
+  --font-family: "Roboto Mono", monospace, san-serif;
+  --box-shadow: 0 0 2rem -5px rgba(105, 105, 105, 0.26);
+  --fluid-text-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --fluid-text-1: clamp(1.2rem, calc(1.1rem + 0.52vw), 1.5rem);
+  --fluid-text-2: clamp(1.44rem, calc(1.25rem + 0.97vw), 2rem);
+  --fluid-text-3: clamp(1.73rem, calc(1.4rem + 1.63vw), 2.66rem);
+  --body-text-clamp: clamp(1.6rem, calc(1.8rem + 0.97vw), 2rem);
+  --header-bg: rgba(17, 181, 231, 0.7);
+  --section-bg: rgba(17, 31, 45, 0.5);
+  --section-header: linear-gradient(147deg, #2247ec 0%, #5b49e8 100%);
+  --bg-color: #ee9536;
+}
+
+/* Reset + global */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--fluid-text-2);
+}
+
+/* Header + Footer */
+header,
+footer {
+  background-color: var(--header-bg);
+  backdrop-filter: blur(6px);
+}
+
+header {
+  display: flex;               /* icon + name in one row */
+  align-items: center;         /* vertical align */
+  padding: 0.5rem 1rem;
+}
+
+header img {
+  width: clamp(20px, 2vw, 28px);  /* scales between 20–28px */
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+header h1 {
+  font-size: var(--fluid-text-2);
+  margin: 0;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+/* Navigation */
+nav {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  display: grid;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #da1919;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: var(--bg-color);
+  color: #000;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+/* Highlight active nav item */
+nav ul li a.active {
+  background-color: var(--bg-color);
+  color: #000 !important;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Main */
+main {
+  color: var(--bg-color);
+  padding: 2rem;
+}
+
+main :where(h2, h3) {
+  text-align: center;
+}
+
+main h2 {
+  color: var(--bg-color);
+  border-bottom: 3px solid var(--bg-color);
+}
+
+main h3:not(.country h3) {
+  background: var(--section-header);
+  border-radius: 0.5rem;
+  color: #000;
+}
+
+main :where(section, h3) {
+  padding: 1.5rem 2rem;
+}
+
+/* Images */
+.img-box {
+  width: 100%;
+}
+
+.country-img-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Coursework */
+.course-work-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.course-work-list {
+  background-color: #f3d0c1;
+  border-radius: 0.5rem;
+}
+
+.course-work-list li {
+  color: #000;
+}
+
+/* Country Info */
+.country-info-box {
+  display: grid;
+  gap: 1rem;
+}
+
+.country-info-box p {
+  color: #000;
+  text-align: center;
+}
+
+/* Certificates */
+.certificate {
+  display: grid;
+  gap: 2rem;
+}
+
+.certificate h2 {
+  color: #000;
+}
+
+/* Buttons */
+.buttons {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.completed {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.not-completed {
+  background-color: #d3d3d3;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+/* Mobile Menu */
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  width: 100%;
+  height: 5rem;
+}
+
+#menu::before {
+  content: "☰";
+  font-size: 3rem;
+}
+
+#menu.open::before {
+  content: "❎";
+}
+
+.navigation li {
+  display: none;
+}
+
+.open li {
+  display: block;
+  width: 100%;
+}
+
+/* About + photo section */
+.about-photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.about-box {
+  color: #000;
+}
+
+.photo-box {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: invert(1); /* make black icons white */
+}

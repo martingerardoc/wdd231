@@ -1,18 +1,29 @@
 @media only screen and (min-width: 56.25em) {
     html {
-      font-size: 1rem;
+      font-size: 62.5%;
     }
-    span p{
-    font-size: 0.5rem;
-  }
   
-    header {
-      font-size: var(--fluid-text-3);
-    }
+header {
+  display: flex;               /* place icon + text in one row */
+  align-items: center;         /* vertical alignment */
+  padding: 0.5rem 1rem;
+  background-color: var(--header-bg);
+}
+
+header img {
+  width: 24px;   /* smaller size */
+  height: 24px;
+  margin-right: 0.5rem; /* space between icon and name */
+}
+
+header h1 {
+  font-size: 1.5rem;  /* reduce text size */
+  margin: 0;
+}
   
     nav,
     main {
-      max-width: 200rem;
+      max-width: 180rem;
       margin: 0 auto;
     }
   
@@ -67,4 +78,14 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+    
+ .social-links {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: left;     /* aligns vertically */
+  gap: 1rem;               /* space between icons */
+  margin: 2rem 0;
+}
+
   }
+  
