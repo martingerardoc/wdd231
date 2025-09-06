@@ -82,7 +82,7 @@ header h1 {
  .social-links {
   display: flex;
   justify-content: center; /* centers horizontally */
-  align-items: left;     /* aligns vertically */
+  align-items: flex-start;     /* aligns vertically */
   gap: 1rem;               /* space between icons */
   margin: 2rem 0;
 }
