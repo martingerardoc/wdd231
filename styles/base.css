@@ -269,3 +269,35 @@ footer {
   object-fit: contain;
   filter: invert(1); /* make black icons white */
 }
+
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  margin: 0.5rem 0;
+}
+
+section img {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
