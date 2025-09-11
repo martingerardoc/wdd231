@@ -1,0 +1,65 @@
+[
+  {
+    "name": "BlueWave Solutions",
+    "address": "123 Ocean Ave, Coral City",
+    "phone": "+1 555-123-4567",
+    "website": "https://bluewave.example.com",
+    "image": "bluewave.png",
+    "membership": 3,
+    "info": "Technology consulting and cloud services."
+  },
+  {
+    "name": "GreenLeaf Foods",
+    "address": "45 Garden Rd, Sunnyvale",
+    "phone": "+1 555-987-6543",
+    "website": "https://greenleaf.example.com",
+    "image": "greenleaf.png",
+    "membership": 2,
+    "info": "Organic and sustainable food products."
+  },
+  {
+    "name": "BrightPath Education",
+    "address": "78 Learning St, Edutown",
+    "phone": "+1 555-246-8101",
+    "website": "https://brightpath.example.com",
+    "image": "brightpath.png",
+    "membership": 1,
+    "info": "After-school programs and tutoring services."
+  },
+  {
+    "name": "EcoBuild Homes",
+    "address": "200 Maple Dr, Forestville",
+    "phone": "+1 555-314-1592",
+    "website": "https://ecobuild.example.com",
+    "image": "ecobuild.png",
+    "membership": 3,
+    "info": "Eco-friendly home construction."
+  },
+  {
+    "name": "NovaPrint Studios",
+    "address": "66 Ink Blvd, Printtown",
+    "phone": "+1 555-765-4321",
+    "website": "https://novaprint.example.com",
+    "image": "novaprint.png",
+    "membership": 2,
+    "info": "Custom printing and design services."
+  },
+  {
+    "name": "SkyNet Drones",
+    "address": "12 Cloud Ln, AeroCity",
+    "phone": "+1 555-111-2222",
+    "website": "https://skynet.example.com",
+    "image": "skynet.png",
+    "membership": 1,
+    "info": "Drone photography and aerial mapping."
+  },
+  {
+    "name": "CrystalCare Health",
+    "address": "99 Wellness Way, Healthville",
+    "phone": "+1 555-333-4444",
+    "website": "https://crystalcare.example.com",
+    "image": "crystalcare.png",
+    "membership": 3,
+    "info": "Private healthcare and wellness programs."
+  }
+]
