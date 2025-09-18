@@ -85,3 +85,96 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #ff9800;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.cta-btn:hover {
+  background: #e68900;
+}
+
+/* Events */
+.events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.events li {
+  padding: 0.5rem;
+}
+
+/* Weather */
+.weather {
+  background: #e3f2fd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Spotlights */
+.spotlights {
+  margin-top: 2rem;
+}
+
+.spotlight-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.spotlight-card img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  .spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
