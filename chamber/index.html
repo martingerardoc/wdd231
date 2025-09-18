@@ -55,10 +55,12 @@
 
     <!-- Weather -->
     <section class="weather">
-      <h2>Current Weather</h2>
-      <div id="weather-data">
-        <p>Loading weather...</p>
-      </div>
+        <h2>Current Weather</h2>
+    <figure>
+         <img id="weather-icon" src="" alt="Weather Icon">
+        <figcaption></figcaption>
+    </figure>
+        <p>Temperature: <span id="current-temp"></span></p>
     </section>
 
     <!-- Spotlights -->
@@ -75,7 +77,7 @@
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="../scripts/datascript.js" defer></script>
+  <script src="../scripts/data.js" defer></script>
   <script src="../scripts/weather.js" defer></script>
   <script src="../scripts/spotlights.js" defer></script>
 </body>

@@ -1,5 +1,5 @@
 async function loadSpotlights() {
-  const response = await fetch("../data/members.json");
+  const response = await fetch("../chamber/data/members.js");
   const members = await response.json();
 
   // filter only Gold/Silver

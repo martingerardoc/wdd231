@@ -1,34 +1,46 @@
-const apiKey = "YOUR_OPENWEATHERMAP_KEY"; // replace with your API key
-const city = "San Nicolás,AR"; // your chamber location
-const weatherContainer = document.getElementById("weather-data");
+// Select HTML elements in the document
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-async function getWeather() {
+// OpenWeatherMap API URL
+// Using Current Weather API for San Nicolás, Argentina with your coordinates
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-33.3309149702017&lon=-60.213933880121644&units=metric&appid=833cfed2902780df868c23d866f97e4b';
+
+// Asynchronous function to fetch weather data
+async function apiFetch() {
   try {
-    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
     const response = await fetch(url);
-    const data = await response.json();
-
-    // Current weather
-    const current = data.list[0];
-    const temp = current.main.temp.toFixed(1);
-    const description = current.weather[0].description;
-
-    // 3-day forecast (every 8th item = ~24h)
-    let forecastHTML = "";
-    for (let i = 8; i <= 24; i += 8) {
-      const day = data.list[i];
-      const date = new Date(day.dt_txt).toLocaleDateString("en-US", { weekday: "long" });
-      forecastHTML += `<p>${date}: ${day.main.temp.toFixed(1)}°C</p>`;
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); // testing only
+      displayResults(data); // display on page
+    } else {
+      throw Error(await response.text());
     }
-
-    weatherContainer.innerHTML = `
-      <p><strong>Now:</strong> ${temp}°C, ${description}</p>
-      <h3>3-Day Forecast</h3>
-      ${forecastHTML}
-    `;
   } catch (error) {
-    weatherContainer.innerHTML = `<p>Weather data unavailable.</p>`;
+    console.log(error);
   }
 }
 
-getWeather();
+// Function to display weather data on the page
+function displayResults(data) {
+  // Current temperature
+  currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
+
+  // Weather icon URL
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+  // Weather description
+  let desc = data.weather[0].description;
+
+  // Set icon src and alt
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+
+  // Set caption text
+  captionDesc.textContent = `${desc}`;
+}
+
+// Call the fetch function
+apiFetch();
