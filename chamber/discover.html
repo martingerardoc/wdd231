@@ -8,7 +8,7 @@
   <meta name="author" content="Martin Cespedes">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="../images/mcespedesicon.ico">
 
   <!-- Facebook Open Graph Meta -->
   <meta property="og:title" content="Chamber of Commerce Directory">
@@ -18,28 +18,23 @@
   <meta property="og:type" content="website">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/discover.css">
 </head>
 <body>
   <header>
     <h2>Chamber of Commerce</h2>
     <nav>
       <ul>
-        <li><a href="../index.html" class="active">home</a></li>
-        <li><a href="index.html">Chamber</a></li>
-        <li><a href="join.html">Join</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
         <li><a href="discover.html">Discover</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Business Directory</h1>
-    <div class="menu">
-      <button id="grid">Grid</button>
-      <button id="list">List</button>
-    </div>
-    <article class="grid" id="directory"></article>
+    <section id="discover-cards" class="grid-container"></section>
   </main>
 
   <footer>
@@ -47,6 +42,8 @@
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="../scripts/datascript.js" defer></script>
+  
+<script src="../scripts/data.js" defer></script>
+<script src="/wdd231/scripts/discover.js" defer></script>
 </body>
 </html>

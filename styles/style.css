@@ -327,6 +327,7 @@ footer {
       cursor: pointer;
     }
 
+
     /* Responsive */
     @media (min-width: 768px) {
       main {

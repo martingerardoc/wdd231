@@ -1,0 +1,50 @@
+[
+  {
+    "name": "San Nicolás Main Plaza",
+    "address": "Av. Nación 123, San Nicolás, Argentina",
+    "description": "The central meeting point of the city, surrounded by cafes, shops, and historic buildings.",
+    "image": "/wdd231/images/plaza-mitre.webp"
+  },
+  {
+    "name": "Municipal Museum",
+    "address": "Calle Arte 45, San Nicolás, Argentina",
+    "description": "Features local history exhibits and rotating art collections.",
+    "image": "/wdd231/images/museo.webp"
+  },
+  {
+    "name": "Parque Aguiar",
+    "address": "Ruta 188, San Nicolás, Argentina",
+    "description": "Large green park ideal for family picnics, sports, and jogging trails.",
+    "image": "/wdd231/images/parqueaguiar.webp"
+  },
+  {
+    "name": "San Nicolás Cathedral",
+    "address": "Calle Mitre 250, San Nicolás, Argentina",
+    "description": "A beautiful neo-gothic cathedral and religious landmark of the city.",
+    "image": "/wdd231/images/santuario.webp"
+  },
+  {
+    "name": "Central Market",
+    "address": "Calle Comercio 76, San Nicolás, Argentina",
+    "description": "Bustling market offering fresh produce, meats, and artisanal goods.",
+    "image": "/wdd231/images/mercado.webp"
+  },
+  {
+    "name": "Regional Stadium",
+    "address": "Av. Deporte 800, San Nicolás, Argentina",
+    "description": "Hosts football matches, concerts, and large community events.",
+    "image": "/wdd231/images/estadio.webp"
+  },
+  {
+    "name": "Historic Bridge",
+    "address": "Río Paraná Crossing, San Nicolás, Argentina",
+    "description": "An iconic bridge connecting the city with the countryside, great for photos.",
+    "image": "/wdd231/images/puente.webp"
+  },
+  {
+    "name": "Teatro Municipal",
+    "address": "Calle Cultura 15, San Nicolás, Argentina",
+    "description": "The main theater featuring plays, concerts, and cultural shows all year round.",
+    "image": "/wdd231/images/teatro.webp"
+  }
+]
