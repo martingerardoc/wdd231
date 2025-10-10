@@ -1,0 +1,47 @@
+/* ==== Responsive for Mobile ==== */
+@media (max-width: 768px) {
+
+    .header {
+    height: 200px;
+    text-align: center;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-content h1 {
+    font-size: 1.6rem;
+  }
+
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #8B0000;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    margin-bottom: 1.5rem;
+  }
+}

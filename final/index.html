@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaucho Restaurant</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/larger.css" />
+  <script src="./scripts/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+      <div class="header-content">
+        <img src="./images/restaurant_logo.webp" alt="Gaucho Restaurant Logo" class="logo">
+        <h1>Gaucho Restaurant</h1>
+      </div>
+    </header>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="full-menu.html">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main-container">
+
+      <!-- Card 1 with carousel -->
+<div class="card">
+  <div class="carousel">
+    <button class="prev">&#10094;</button>
+    <div class="carousel-images">
+      <div class="carousel-slide">
+        <img src="./images/monday.webp" alt="Monday Menu" loading="lazy">
+        <span class="day-label">Monday</span>
+      </div>
+      <div class="carousel-slide">
+        <img src="./images/tuesday.webp" alt="Tuesday Menu" loading="lazy">
+        <span class="day-label">Tuesday</span>
+      </div>
+      <div class="carousel-slide">
+        <img src="./images/wednesday.webp" alt="Wednesday Menu" loading="lazy">
+        <span class="day-label">Wednesday</span>
+      </div>
+      <div class="carousel-slide">
+        <img src="./images/thursday.webp" alt="Thursday Menu" loading="lazy">
+        <span class="day-label">Thursday</span>
+      </div>
+      <div class="carousel-slide">
+        <img src="./images/friday.webp" alt="Friday Menu" loading="lazy">
+        <span class="day-label">Friday</span>
+      </div>
+      <div class="carousel-slide">
+        <img src="./images/saturday.webp" alt="Saturday Menu" loading="lazy">
+        <span class="day-label">Saturday</span>
+      </div>
+      <div class="carousel-slide">
+        <img src="./images/sunday.webp" alt="Sunday Menu" loading="lazy">
+        <span class="day-label">Sunday</span>
+      </div>
+    </div>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <div class="card-content">
+    <h3>Menu of the Day</h3>
+    <p>Enjoy today’s selection of fine Argentine dishes grilled to perfection.</p>
+    <a href="menu-day.html" class="btn">See Full Menu</a>
+  </div>
+</div>
+
+      <!-- Card 2 -->
+      <a href="offers.html" class="card">
+        <img src="./images/offers.jpg" alt="Special Offers" loading="lazy">
+        <div class="card-content">
+          <h3>Special Offers</h3>
+          <p>Check out our weekly promotions and discounts on premium meats and wines.</p>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="best-dish.html" class="card">
+        <img src="./images/bestdish.webp" alt="Best Dish" loading="lazy">
+        <div class="card-content">
+          <h3>Best Dish</h3>
+          <p>Our signature “Asado Gaucho” – slow-cooked beef ribs with chimichurri sauce.</p>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="full-menu.html" class="card">
+        <img src="./images/full-menu.jpg" alt="Full Menu" loading="lazy">
+        <div class="card-content">
+          <h3>Full Menu</h3>
+          <p>Explore our full menu including appetizers, desserts, and beverages.</p>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gaucho Restaurant – Taste the Spirit of Patagonia</p>
+  </footer>
+</body>
+</html>

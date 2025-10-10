@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Feedback | Gaucho Restaurant</title>
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="./images/logo.png" alt="Gaucho Logo" class="logo">
+    <h1>Contact & Feedback</h1>
+  </header>
+
+  <main class="form-container">
+    <h2>We’d love to hear from you!</h2>
+    <p>Please fill out the form below to request information, share feedback, or report an issue.</p>
+
+    <form class="feedback-form" action="#" method="POST">
+      <!-- Contact info -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+      <label for="phone">Phone (optional):</label>
+      <input type="tel" id="phone" name="phone" placeholder="+54 9 1234 5678">
+
+      <!-- Type of message -->
+      <label for="topic">Type of message:</label>
+      <select id="topic" name="topic" required>
+        <option value="">-- Select an option --</option>
+        <option value="info">Request Information</option>
+        <option value="feedback">Feedback about Menu/Dishes</option>
+        <option value="service">Report an Uncomfortable Situation or Poor Service</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Message box -->
+      <label for="message">Your message:</label>
+      <textarea id="message" name="message" rows="6" placeholder="Write your comments here..." required></textarea>
+
+      <!-- Rating -->
+      <label>Rate your experience:</label>
+      <div class="rating">
+        <input type="radio" name="rating" value="5" id="rate5"><label for="rate5">★</label>
+        <input type="radio" name="rating" value="4" id="rate4"><label for="rate4">★</label>
+        <input type="radio" name="rating" value="3" id="rate3"><label for="rate3">★</label>
+        <input type="radio" name="rating" value="2" id="rate2"><label for="rate2">★</label>
+        <input type="radio" name="rating" value="1" id="rate1"><label for="rate1">★</label>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Gaucho Restaurant. All rights reserved.</p>
+  </footer>
+</body>
+</html>
