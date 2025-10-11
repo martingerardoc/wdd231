@@ -3,15 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact & Feedback | Gaucho Restaurant</title>
+  <title>Gaucho Restaurant</title>
+  <meta name="description" content="Final Project WDD231." />
+  <meta name="author" content="Martin Cespedes" />
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Martin Cespedes - WDD 231 - Web Frontend 1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://pbs.twimg.com/media/DTsoG8_XUAEzZhB?format=webp&name=small" />
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts: single link for all fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="../styles/projectstyle.css" />
   <link rel="stylesheet" href="../styles/projectlarger.css" />
+  <script src="../scripts/finalscript.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <img src="./images/logo.png" alt="Gaucho Logo" class="logo">
-    <h1>Contact & Feedback</h1>
-  </header>
+      <div class="header-content">
+        <img src="../images/McespedesIcon.ico" alt="Site Icon" />
+        <img src="../images/restaurant_logo.webp" alt="Gaucho Restaurant Logo" class="logo">
+        <h2>Contact</h2>
+      </div>
+    </header>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="final.html">Home</a></li>
+        <li><a href="full-menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main class="form-container">
     <h2>We’d love to hear from you!</h2>
