@@ -44,4 +44,19 @@
   .section {
     margin-bottom: 1.5rem;
   }
+.social-links {
+    flex-direction: row;        /* keep icons in one row */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    background-color: #8B0000;  /* still visible on mobile */
+    padding: 0.8rem;
+  }
+
+  .social-links a img {
+    width: 36px;                /* slightly smaller for mobile */
+    height: 36px;
+  }
+
 }

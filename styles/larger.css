@@ -79,7 +79,7 @@ header h1 {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
     
- .social-links {
+.social-links {
   display: flex;
   justify-content: center; /* centers horizontally */
   align-items: flex-start;     /* aligns vertically */

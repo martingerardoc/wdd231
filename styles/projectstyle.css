@@ -251,6 +251,33 @@ main {
   flex: 1;
 }
 
+/* ==== Social Links ==== */
+
+/* Base (works for larger screens by default) */
+.social-links {
+  display: flex;
+  justify-content: center;      /* center icons horizontally */
+  align-items: center;          /* center vertically */
+  gap: 1.2rem;                  /* space between icons */
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #8B0000;    /* Dark Red for visibility */
+  border-radius: 10px;
+}
+
+.social-links a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect */
+.social-links a:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
 /* ==== Footer ==== */
 footer {
   background-color: #8B0000; /* Dark Red */
@@ -398,4 +425,12 @@ body {
 
 main {
   flex: 1;
+}
+  .social-links {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: flex-start;     /* aligns vertically */
+  gap: 1rem;               /* space between icons */
+  margin: 2rem 0;
+  
 }
