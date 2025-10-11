@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gaucho Restaurant</title>
+  <meta name="description" content="Final Project WDD231." />
+  <meta name="author" content="Martin Cespedes" />
+
   <!-- Open Graph for social sharing -->
   <meta property="og:title" content="Martin Cespedes - WDD 231 - Web Frontend 1" />
   <meta property="og:type" content="website" />
@@ -24,7 +27,7 @@
 <body>
     <header class="header">
       <div class="header-content">
-        <img src="./images/restaurant_logo.webp" alt="Gaucho Restaurant Logo" class="logo">
+        <img src="../images/restaurant_logo.webp" alt="Gaucho Restaurant Logo" class="logo">
         <h1>Gaucho Restaurant</h1>
       </div>
     </header>
@@ -37,7 +40,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="#">History</a></li>
         <li><a href="full-menu.html">Menu</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -51,31 +54,31 @@
     <button class="prev">&#10094;</button>
     <div class="carousel-images">
       <div class="carousel-slide">
-        <img src="/images/monday.webp" alt="Monday Menu" loading="lazy">
+        <img src="../images/monday.webp" alt="Monday Menu" loading="lazy">
         <span class="day-label">Monday</span>
       </div>
       <div class="carousel-slide">
-        <img src="/images/tuesday.webp" alt="Tuesday Menu" loading="lazy">
+        <img src="../images/tuesday.webp" alt="Tuesday Menu" loading="lazy">
         <span class="day-label">Tuesday</span>
       </div>
       <div class="carousel-slide">
-        <img src="/images/wednesday.webp" alt="Wednesday Menu" loading="lazy">
+        <img src="../images/wednesday.webp" alt="Wednesday Menu" loading="lazy">
         <span class="day-label">Wednesday</span>
       </div>
       <div class="carousel-slide">
-        <img src="/images/thursday.webp" alt="Thursday Menu" loading="lazy">
+        <img src="../images/thursday.webp" alt="Thursday Menu" loading="lazy">
         <span class="day-label">Thursday</span>
       </div>
       <div class="carousel-slide">
-        <img src="/images/friday.webp" alt="Friday Menu" loading="lazy">
+        <img src="../images/friday.webp" alt="Friday Menu" loading="lazy">
         <span class="day-label">Friday</span>
       </div>
       <div class="carousel-slide">
-        <img src="/images/saturday.webp" alt="Saturday Menu" loading="lazy">
+        <img src="../images/saturday.webp" alt="Saturday Menu" loading="lazy">
         <span class="day-label">Saturday</span>
       </div>
       <div class="carousel-slide">
-        <img src="/images/sunday.webp" alt="Sunday Menu" loading="lazy">
+        <img src="../images/sunday.webp" alt="Sunday Menu" loading="lazy">
         <span class="day-label">Sunday</span>
       </div>
     </div>
@@ -121,6 +124,13 @@
 
   <footer>
     <p>&copy; 2025 Gaucho Restaurant – Taste the Spirit of Patagonia</p>
+     <p>
+        &copy; <span id="year"></span> .:|:. Martin Cespedes .:|:. Buenos Aires Argentina
+      </p>
+      <p>
+        Last Modification:
+        <span id="lastModified"></span>
+      </p>
   </footer>
 </body>
 </html>
